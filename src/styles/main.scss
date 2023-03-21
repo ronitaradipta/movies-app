@@ -1,0 +1,95 @@
+@import "bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --accent: #ffbf00;
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(158, 158, 158);
+  border-radius: 20px;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 50px !important;
+}
+
+header {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.65) 8%,
+    rgba(0, 0, 0, 0.65) 9%,
+    transparent 93%
+  );
+  margin-bottom: -80px;
+  transition: all 0.5s;
+}
+
+section {
+  padding: 80px 0px;
+}
+
+.black-transparent {
+  background-color: rgba(0, 0, 0, 0.641);
+}
+
+a.navbar-brand {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 26px;
+  margin-right: 60px;
+}
+
+a.navbar-brand:hover {
+  color: var(--accent);
+}
+
+a.nav-link.active {
+  color: #fff !important;
+  font-weight: 600;
+}
+
+a.nav-link:hover {
+  color: #fff;
+}
+
+.nav-item a {
+  font-weight: 500;
+  color: rgb(187, 187, 187);
+}
+
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+
+.offcanvas-header > h5 {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.hero {
+  background: linear-gradient(
+      90.4deg,
+      rgba(0, 0, 0, 0.58) 46.31%,
+      rgba(0, 0, 0, 0) 85.75%
+    ),
+    url("https://image.tmdb.org/t/p/w500/sv1xJUazXeYqALzczSZ3O6nkH75.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  min-height: 700px;
+}

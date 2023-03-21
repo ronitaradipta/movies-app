@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Movies</title>
+  </head>
+  <body class="bg-black">
+    <header class="sticky-top">
+      <nav-bar></nav-bar>
+    </header>
+    <main>
+      <section
+        class="hero d-flex justify-content-center align-items-center flex-column px-4"
+      >
+        <div class="row d-flex flex-column">
+          <h1 class="text-white fw-semibold text-center col-md-12">
+            Unlimited Movies, TV Shows,<br />
+            and more
+          </h1>
+          <search-bar></search-bar>
+        </div>
+      </section>
+      <section class="d-none" id="search-container">
+        <div class="container">
+          <h2 class="text-white text-center mb-4">Search Results</h2>
+          <search-results></search-results>
+        </div>
+      </section>
+      <section name="popular-section" id="popular-section">
+        <div class="container">
+          <h2 class="text-white mb-4">Popular Now</h2>
+          <movie-list id="popular"></movie-list>
+        </div>
+      </section>
+      <section name="trending-section" id="trending-section">
+        <div class="container">
+          <h2 class="text-white mb-4">Trending</h2>
+          <movie-list id="trending"></movie-list>
+        </div>
+      </section>
+      <section name="television-section" id="television-section">
+        <div class="container">
+          <h2 class="text-white mb-4">Popular TV Shows</h2>
+          <movie-list id="television"></movie-list>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-5 pb-4">
+      <div class="container">
+        <hr class="bg-white text-white" />
+        <p class="text-muted text-center">Powered by OurMovie</p>
+      </div>
+    </footer>
+  </body>
+</html>
